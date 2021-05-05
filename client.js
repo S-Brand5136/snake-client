@@ -22,6 +22,10 @@ const connect = () => {
     conn.write(`Name: BS`);
   });
 
+  conn.on("end", () => {
+    console.log("You lost!");
+  });
+
   // return that established connection
   return conn;
 };
