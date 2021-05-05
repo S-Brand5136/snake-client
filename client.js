@@ -16,6 +16,12 @@ const connect = () => {
     console.log(data);
   });
 
+  conn.on("connect", () => {
+    console.log(`Succesfully connected to the snake game server`);
+
+    conn.write(`Name: BS`);
+  });
+
   // return that established connection
   return conn;
 };
