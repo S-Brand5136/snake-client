@@ -22,5 +22,5 @@ const connect = () => {
 
 // log connecting so we know its doing something
 console.log("Connecting ...");
-// run the connect function to try and connect to the lighthouse game server
-connect();
+
+module.exports = connect;
