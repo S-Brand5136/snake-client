@@ -1,4 +1,4 @@
-const setUpPlay = () => {
+const setUpInput = () => {
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
@@ -15,4 +15,4 @@ const handleUserInput = (key) => {
   }
 };
 
-setUpPlay();
+module.exports = { setUpInput };

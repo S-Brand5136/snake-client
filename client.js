@@ -26,7 +26,4 @@ const connect = () => {
   return conn;
 };
 
-// log connecting so we know its doing something
-console.log("Connecting ...");
-
 module.exports = { connect };
